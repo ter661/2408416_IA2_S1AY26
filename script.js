@@ -1,3 +1,8 @@
+/* Student Name: Terel Wallace
+    Student ID: 2408416
+    Course/Project: Lab 2
+    File: java script
+*/
 const cartCountElement = document.getElementById('cart-count');
 const loginContainer = document.getElementById('login-container');
 const loginModal = document.getElementById('login-modal');
