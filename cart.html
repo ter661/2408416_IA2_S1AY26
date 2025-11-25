@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decor Haven - Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">Decor Haven</div>
+        <nav>
+            <ul class="nav-links">
+                 <li id="login-container">
+                    <a id="login-link" href="#" onclick="showLoginModal()">Log In</a>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a id="cart-button" class="active" href="cart.html">🛒 (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="cart-page">
+            <h2>Your Shopping Cart</h2>
+            
+            <div id="cart-items-container">
+                <p>Loading cart...</p>
+            </div>
+
+            <div id="cart-summary">
+                <p>Subtotal: <span id="cart-summary-total">$0.00</span></p>
+                <button id="checkout-btn" onclick="handleCheckout()">Proceed to Checkout</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <p>&copy; <span id="current-year"></span> Decor Haven. All rights reserved.</p>
+    </footer>
+
+    <div id="login-modal" class="modal">
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
