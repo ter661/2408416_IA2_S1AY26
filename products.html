@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decor Haven - Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">Decor Haven</div>
+        <nav>
+            <ul class="nav-links">
+                <li id="login-container">
+                    <a id="login-link" href="#" onclick="showLoginModal()">Log In</a>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a id="cart-button" href="cart.html">🛒 (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="products-list">
+            <h2>Seasonal and Featured Decor</h2>
+            <div class="product-page-grid">
+                
+                <article class="christmas-product-card">
+                    <h3>The Majestic Spruce Tree</h3>
+                    <img src="placeholder_tree.jpg" alt="A tall, decorated Christmas tree.">
+                    <p>A beautiful artificial spruce tree, lit with warm LED lights. Perfect for a cozy holiday feel.</p>
+                    <span class="product-price">$199.99</span>
+                    <button 
+                        class="add-to-cart-btn" 
+                        data-id="XMS-TREE-001" 
+                        data-name="Majestic Spruce Tree" 
+                        data-price="199.99">
+                        Purchase
+                    </button>
+                </article>
+
+                <article class="christmas-product-card">
+                    <h3>Classic Velvet Santa</h3>
+                    <img src="placeholder_santa.jpg" alt="A large velvet Santa Claus toy figure.">
+                    <p>A traditional 24-inch decorative Santa Claus toy, handmade with plush velvet and faux fur trim. A classic holiday essential.</p>
+                    <span class="product-price">$49.50</span>
+                    <button 
+                        class="add-to-cart-btn" 
+                        data-id="XMS-SANTA-002" 
+                        data-name="Classic Velvet Santa" 
+                        data-price="49.50">
+                        Purchase
+                    </button>
+                </article>
+                
+                <article class="christmas-product-card">
+                    <h3>'Naughty or Nice' Mug</h3>
+                    <img src="placeholder_mug.jpg" alt="A ceramic mug with a holiday graphic.">
+                    <p>Oversized ceramic mug, perfect for hot cocoa or coffee on a winter morning. Festive red glaze.</p>
+                    <span class="product-price">$12.00</span>
+                    <button 
+                        class="add-to-cart-btn" 
+                        data-id="XMS-MUG-003" 
+                        data-name="Naughty or Nice Mug" 
+                        data-price="12.00">
+                        Purchase
+                    </button>
+                </article>
+
+                <article class="christmas-product-card"> <h3>Jingle Bell Crocs (Limited Edition)</h3>
+                    <img src="placeholder_crocs.jpg" alt="Holiday-themed Crocs shoes.">
+                    <p>Limited edition red and green Crocs featuring removable Jibbit charms. Fun and comfortable holiday footwear.</p>
+                    <span class="product-price">$55.99</span>
+                    <button 
+                        class="add-to-cart-btn" 
+                        data-id="XMS-CROCS-004" 
+                        data-name="Jingle Bell Crocs" 
+                        data-price="55.99">
+                        Purchase
+                    </button>
+                </article>
+                
+                <article class="christmas-product-card"> <h3>Cozy Reindeer Socks (3-Pack)</h3>
+                    <img src="placeholder_socks.jpg" alt="A set of three warm reindeer-themed socks.">
+                    <p>Ultra soft thermal knit socks featuring playful reindeer designs. Perfect stocking stuffer.</p>
+                    <span class="product-price">$18.50</span>
+                    <button 
+                        class="add-to-cart-btn" 
+                        data-id="XMS-SOCKS-005" 
+                        data-name="Cozy Reindeer Socks" 
+                        data-price="18.50">
+                        Purchase
+                    </button>
+                </article>
+
+                <article class="christmas-product-card">
+                    <h3>Premium Plush Santa Hat</h3>
+                    <img src="placeholder_hat.jpg" alt="A classic plush Santa hat.">
+                    <p>Luxurious plush red Santa hat. One size fits all.</p>
+                    <span class="product-price">$9.99</span>
+                    <button 
+                        class="add-to-cart-btn" 
+                        data-id="XMS-HAT-006" 
+                        data-name="Premium Plush Santa Hat" 
+                        data-price="9.99">
+                        Purchase
+                    </button>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <p>&copy; <span id="current-year"></span> Decor Haven. All rights reserved.</p>
+    </footer>
+
+    <div id="login-modal" class="modal">
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
