@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decor Haven - Elegant Home Decor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">Decor Haven</div>
+        <nav>
+            <ul class="nav-links">
+                <li id="login-container">
+                    <a id="login-link" href="#" onclick="showLoginModal()">Log In</a>
+                </li>
+                
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li> 
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a id="cart-button" href="cart.html">🛒 (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="hero-text">
+                <h1>Elevate Your Space with Timeless Decor</h1>
+                <p>Discover hand picked pieces that bring elegance and comfort to your home.</p>
+                <a href="products.html" class="cta-button">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <h2>Featured Collections</h2>
+            <div class="product-grid">
+                <article class="product-card">
+                    <h3>The Serenity Collection</h3>
+                    <p>Minimalist design for a peaceful sanctuary.</p>
+                </article>
+                <article class="product-card">
+                    <h3>Rustic Charm</h3>
+                    <p>Warm woods and cozy textures for a classic feel.</p>
+                </article>
+                <article class="product-card">
+                    <h3>Urban Edge</h3>
+                    <p>Bold geometry and metallic accents.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="newsletter-signup">
+            <h2>Join Our Newsletter</h2>
+            <form id="signup-form">
+                <input type="email" id="email-input" placeholder="Enter your email" required aria-label="Email for newsletter signup">
+                <button type="submit" id="submit-btn">Subscribe</button>
+            </form>
+            <p id="validation-message" role="alert" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <p>&copy; <span id="current-year"></span> Decor Haven. All rights reserved.</p>
+    </footer>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeLoginModal()">&times;</span>
+            <h3>Customer Login</h3>
+            <form id="login-form">
+                <label for="user-email">Enter your Email:</label>
+                <input type="email" id="user-email" required placeholder="example@email.com">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
